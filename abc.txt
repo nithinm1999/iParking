@@ -1,0 +1,17 @@
+ <header id="showcase" class="grid">
+                                                <div class="content-wrap">
+                                                        <span id="section-a" class="grid">
+                                                               
+                                                                
+                                                                    <h3 class="content-wrap1">PES University now has an</h3>
+                                                            
+                                                        </span>
+                                                            <span id="section-b" class="grid">
+                                                           
+                                                                    <h4 class="content-wrap2">iParking system</h3>
+                                                                    
+                                                            </span>
+                                                            <span>   <a href="/register" class="btn">Register</a></span>
+                                            
+                                                </div>
+                                            </header>

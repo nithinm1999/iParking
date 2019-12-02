@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iPARKING</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/icon.min.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="stylesheet" type="text/css" href="feedback.css">
+	<link rel="stylesheet" type="text/css" href="info.css">
+	<link rel="stylesheet" type="text/css" href="access.css">
+	<link rel="stylesheet" type="text/css" href="tfeed1.css">
+	<link rel="stylesheet" type="text/css" href="tfeed2.css">
+	<link rel="stylesheet" type="text/css" href="access1.css">
+
+
+
+
+</head>
+<body>
+
+	
+			<nav class="navbar navbar-default head" style="background-color:#021b38;">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							
+							<a  style="color:rgb(226, 221, 221);" class="navbar-brand" href="/"><i id="icon1" class="car icon"></i>iParking-PESUECC</a>
+						
+			
+			
+			
+						</div>
+								
+							<ul class="nav navbar-nav navbar-left">
+								<li><a style="color:rgb(184, 175, 175);" href="/">Home</a></li>
+								<li><a style="color:rgb(184, 175, 175);" href="/info">Info</a></li>
+								<li><a style="color:rgb(184, 175, 175);" href="https://pesit.pes.edu/about/">About</a></li>
+								<li><a style="color:rgb(184, 175, 175);" href="/feedback">Feedback</a></li>
+							</ul>						
+					</div>
+			</nav>  
+<main class='a3'>
+	<form action="/refresh2" method="POST">
+			<button class="done">BACK</button>
+	</form>
+	<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;border: transparent;}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+		.tg .tg-xldj{border-color:inherit;text-align:left}
+		.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+		</style>
+		<table class="tg">
+		  <tr>
+			<th class="tg-xldj"><h2 class="x">IDUSN:</h2></th>
+			<th class="tg-xldj">	<h1 class="z"><%=c[0].rfid%></h1></th>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky"><H2 class="x">NAME:</H2></td>
+			<td class="tg-0pky">	<h1 class="z" ><%=c[0].name%></h1>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky"><H2 class="x">REASON:</H2></td>
+			<td class="tg-0pky">	<h1 class="z"><%=c[0].reason%></h1>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky"><H2 class="x">VEHICLE_NO:</H2></td>
+			<td class="tg-0pky">	<h1 class="z"><%=c[0].vehicle_no%></h1>
+			</td>
+          </tr>
+          <tr>
+                <td class="tg-0pky"><H2 class="x">CONTACT:</H2></td>
+                <td class="tg-0pky">	<h1 class="z"><%=c[0].phno%></h1>
+                </td>
+              </tr>
+		</table>
+</main>
+<% include partials/footer %>

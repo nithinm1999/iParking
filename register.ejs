@@ -1,0 +1,58 @@
+<% include partials/header %>
+
+<main class="main">
+    <div class="col-lg-4 reg1">
+        <div class="outer">
+            <figure>
+               <div class="slider">
+                   <img src="\pes2.jpg"  >
+                   <img src="\pes3.jpg"  >   
+                   <img src="\pes2.jpg"  >    
+                   <img src="\pes.jpg"  >      
+               </div>
+            </figure>
+       </div>
+       </div>          
+       <div class="col-lg-8 reg2">
+        <form action="/signup" method="post">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name :</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="nm" placeholder="Enter Name" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="exampleInputPassword2">Mail-id :</label>
+                <input type="email" class="form-control" id="exampleInputPassword2" name='mid' placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword3">Mobile.no :</label>
+                <input type="text" class="form-control" id="exampleInputPassword3" name='ph' placeholder="Enter mobile no" required>
+              </div>
+               
+            <div class="form-group">
+                <label for="exampleInputPassword4">ID-USN :</label>
+                <input type="text" class="form-control" id="exampleInputPassword4" name="id" placeholder="Enter idusn" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Type</label>
+                  <select name="select" class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">Student</option>
+                    <option value="2">Staff</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Vehicle-Type</label>
+                      <select name="select1" class="form-control" id="exampleFormControlSelect1">
+                        <option value="1">2-Wheeler</option>
+                        <option value="2">4-Wheeler</option>
+                        <option value="3">both</option>
+                      </select>
+                    </div>
+            <button type="submit" class="button btn-primary">Submit</button>
+          </form>
+          </div>
+    
+</main>
+
+
+<% include partials/footer %>

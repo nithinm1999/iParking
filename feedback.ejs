@@ -1,0 +1,30 @@
+<% include partials/header %>
+<main class="m">
+    <div class="container">
+        <form class='m2' action="/feed" method="POST">
+      
+          <label for="id">ID-USN :</label>
+          <input type="text" id="id" name="id" placeholder="your id-usn." required>
+          <label for="type">Type :</label>
+          <select id="type" name="select">
+            <option value="s1">Student</option>
+            <option value="s2">Staff</option>
+          </select>
+          <label for="rating">Rating :</label>
+          <select id="rating" name="rating">
+            <option value="5">5</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label for="feedback">Feedback :</label>
+          <textarea id="feedback" name="feedback" placeholder="your feedback matters......" style="height:100px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</main>
+
+<% include partials/footer %>
